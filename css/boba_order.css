@@ -1,0 +1,76 @@
+@charset "utf-8";
+div.row {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+
+/* Clear floats after the columns */
+ div.row:after {
+    content: "";
+    clear: both;
+}
+h2 ~ h4 {
+    font-weight: bold;
+    color: chocolate;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+div.leftcolumn {
+    /* float: left; */
+    width: 50%;
+    flex-grow: 1;
+}
+/* 7 */
+div.leftcolumn:first-child{
+    background-color: white;
+    padding: 10px 20px 0px 20px;
+}
+
+/* Right column */
+div.rightcolumn {
+    /* float: left; */
+    width: 50%;
+    background-color: white;
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+/* Add a card effect for aside */
+aside.card {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+h2 {
+    color: rgba(231, 19, 118, 0.973);
+    font-weight: bold;
+}
+button {
+    background-color:rgba(255, 0, 140, 0.87);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#order_classic{
+    text-align: center;
+}
+
+#orderTable_classic {
+    display: inline-block;
+}
+
+#orderTable_classic td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+

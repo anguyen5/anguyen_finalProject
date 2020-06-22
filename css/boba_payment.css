@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+
+div.content:first-child{
+    background-color: white;
+    padding: 10px 20px 0px 20px;
+}
+
+/* style for h2,h3 */
+ div.content > h2{
+    color: forestgreen;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+}
+
+.row {
+    margin-top: 10px;
+    width: 100%;
+
+}
+table {
+    width: 100%;
+ 
+}
+table td {
+    width: 25%;
+    
+}
+.title_table{
+    background-color: rgb(231, 128, 180);
+    font-size: 1.1em;
+    color: blue;
+}
+.content{
+    /* position: relative; */
+}
+#payment {
+    background-color:rgba(255, 0, 140, 0.87);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    /* position: absolute; */
+    display: block;
+    margin: 0 auto;
+}
+
+#total {
+    text-align: right;
+}

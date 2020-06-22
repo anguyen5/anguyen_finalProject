@@ -1,0 +1,51 @@
+@charset "utf-8";
+div.row {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+/* Need to fix */
+
+div.leftcolumn #clickMe{
+    font-family: 'Roboto Mono', monospace;
+    color: hotpink;
+}
+/* Clear floats after the columns */
+ div.row:after {
+    content: "";
+    clear: both;
+}
+div.leftcolumn h2 {
+    font-weight: bold;
+    color: rgb(53, 211, 13);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+div.leftcolumn {
+    /* float: left; */
+    width: 75%;
+    flex-grow: 1;
+}
+/* 7 */
+div.leftcolumn:first-child{
+    background-color: white;
+    padding: 10px 20px 0px 20px;
+}
+
+/* Right column */
+div.rightcolumn {
+    /* float: left; */
+    width: 25%;
+    /* background-color: #f1f1f1; */
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+/* Add a card effect for aside */
+aside.card {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+}
+

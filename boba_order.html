@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Snow boba tea</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/boba_order.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="boba_order.js" async></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="img/boba_title_edit.jpeg" alt="Snow Boba header">
+            <h1>Snow boba tea</h1>
+        </div>
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="boba_menu.html">Menu</a>
+            <a href="boba_order.html">Order</a>
+            <a href="boba_payment.html">Payment</a>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <img id="img_order" src="img/boba_Menu_brownSugar.jpg" alt="" width="100%">
+
+        </div>
+        <div class="rightcolumn">
+
+            <section id="order_classic">
+                <form id="orderForm">
+                    <h2 id="name_product">Classic Boba</h2>
+                    <table id="orderTable_classic">
+                        <!--Use checkbox for toping-->
+                        <tr>
+                            <td id="topping_checkbox">
+                                <fieldset>
+                                    <legend>Topping</legend>
+                                    <div>
+                                        <input type="checkbox" class="topping_order" name="pearl" value="0.50">
+                                        <label for="pearl">Pearl ($0.50)</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="topping_order" name="lychee_jelly" value="0.50">
+                                        <label for="lychee_jelly">Lychee Jelly($0.50)</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="topping_order" name="pudding" value="0.50">
+                                        <label for="pudding">Pudding($0.50)</label>
+                                    </div>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <!--Use radiobutton for sweet-->
+                        <tr>
+                            <td id="sweet_radiobutton">
+                                <fieldset>
+                                    <legend>Sweet</legend>
+                                    <label><input type="radio" class="sweet_order" name="Less Sugar">Less Sugar
+                                        (80%)</label>
+                                    <label><input type="radio" class="sweet_order" name="Normal Sugar">Normal
+                                        Sugar (100%)</label>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <!--Use radiobutton for size-->
+                        <tr>
+                            <td id="size_radiobutton">
+                                <fieldset>
+                                    <legend>Size</legend>
+                                    <label><input type="radio" class="size_order" name="Small" value="4.00">Small
+                                        ($4.00)</label>
+                                    <label><input type="radio" class="size_order" name="Normal" value="5.00">Normal
+                                        ($5.00)</label>
+                                    <label><input type="radio" class="size_order" name="Large" value="5.50">Large
+                                        ($5.50)</label>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <!--Use dropdown for quantity-->
+                        <tr>
+                            <td id="qty_dropdown">
+                                <label for="qty">Quantity</label>
+                                <select name="qty" id="qty">
+                                    <option value="0" selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <button type="button" id="button_AddToCart">Add To Cart</button>
+                
+            </section>
+            </form>
+
+        </div>
+    </div>
+    </div>
+
+    <footer> &#10084; Snow Boba Tea &#10084; touch your heart </footer>
+
+</body>
+
+</html>
